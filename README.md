@@ -13,3 +13,7 @@ Nebula accompagna il partecipante attraverso una serie di punti deboli e vulnera
 <li>Errori di compilazione binaria</li>
 </ul>
 <p>Alla fine di Nebula, l'utente avrà una comprensione abbastanza approfondita degli attacchi locali contro i sistemi Linux e uno sguardo superficiale ad alcuni degli attacchi remoti possibili.</p>
+
+
+<h2> Download Nebula </h2>
+<p> Il download è disponibile <a href="https://exploit.education/downloads/" qui  </a> </p>
