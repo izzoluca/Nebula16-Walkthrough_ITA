@@ -16,4 +16,4 @@ Nebula accompagna il partecipante attraverso una serie di punti deboli e vulnera
 
 
 <h2> Download Nebula </h2>
-<p> Il download è disponibile <a href="https://exploit.education/downloads/" qui  </a> </p>
+<p> Il download è disponibile <a href="https://exploit.education/downloads/" </a> qui </p>
