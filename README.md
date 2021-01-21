@@ -1,2 +1,4 @@
-# Nebula16-Walkthrough
-Nebula is a vulnerable virtual machine which has weaknesses and vulnerabilities in a Linux system.
+# Nebula16-Walkthrough_ITA
+<p> Nebula è una macchina virtuale vulnerabile che presenta punti deboli e vulnerabilità in un sistema Linux. </p>
+
+
