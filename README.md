@@ -48,8 +48,6 @@ Per fare questo livello, accedi come l'account level16 con la password level16. 
   @output <span style="color:#f92672">=</span> <span style="color:#e6db74">`egrep "^$username" /home/flag16/userdb.txt 2&gt;&amp;1`</span>;
   <span style="color:#66d9ef">foreach</span> $line (@output) {
       ($usr, $pw) <span style="color:#f92672">=</span> split(<span style="color:#e6db74">/:/</span>, $line);
-  
-
       <span style="color:#66d9ef">if</span>($pw <span style="color:#f92672">=~</span> $password) {
           <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
       }
