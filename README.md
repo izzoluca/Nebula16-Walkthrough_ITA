@@ -31,46 +31,41 @@ Utente = "nebula" & Password = "nebula" seguita da "sudo -s" con la password "ne
 Per fare questo livello, accedi come l'account level16 con la password level16. I file per questo livello possono essere trovati in "/home/flag16". </p>
 
 <h2> Codice Sorgente </h2>
-<p>
-<code>
 
-#!/usr/bin/env perl
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/env perl</span>
 
-use CGI qw{param};
+<span style="color:#66d9ef">use</span> CGI <span style="color:#e6db74">qw{param}</span>;
 
-print "Content-type: text/html\n\n";
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">"Content-type: text/html\n\n"</span>;
 
-sub login {
-  $username = $_[0];
-  $password = $_[1];
+<span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">login</span> {
+  $username <span style="color:#f92672">=</span> $_[<span style="color:#ae81ff">0</span>];
+  $password <span style="color:#f92672">=</span> $_[<span style="color:#ae81ff">1</span>];
 
-  $username =~ tr/a-z/A-Z/; # conver to uppercase
-  $username =~ s/\s.*//;        # strip everything after a space
+  $username <span style="color:#f92672">=~</span> tr<span style="color:#e6db74">/a-z/</span>A<span style="color:#f92672">-</span>Z<span style="color:#f92672">/</span>; <span style="color:#75715e"># conver to uppercase</span>
+  $username <span style="color:#f92672">=~</span> <span style="color:#e6db74">s/\s.*//</span>;        <span style="color:#75715e"># strip everything after a space</span>
 
-  @output = `egrep "^$username" /home/flag16/userdb.txt 2>&1`;
-  foreach $line (@output) {
-      ($usr, $pw) = split(/:/, $line);
+  @output <span style="color:#f92672">=</span> <span style="color:#e6db74">`egrep "^$username" /home/flag16/userdb.txt 2&gt;&amp;1`</span>;
+  <span style="color:#66d9ef">foreach</span> $line (@output) {
+      ($usr, $pw) <span style="color:#f92672">=</span> split(<span style="color:#e6db74">/:/</span>, $line);
   
 
-      if($pw =~ $password) {
-          return 1;
+      <span style="color:#66d9ef">if</span>($pw <span style="color:#f92672">=~</span> $password) {
+          <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
       }
   }
 
-  return 0;
+  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
 }
 
-sub htmlz {
-  print("<html><head><title>Login resuls</title></head><body>");
-  if($_[0] == 1) {
-      print("Your login was accepted<br/>");
-  } else {
-      print("Your login failed<br/>");
+<span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">htmlz</span> {
+  <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">"&lt;html&gt;&lt;head&gt;&lt;title&gt;Login resuls&lt;/title&gt;&lt;/head&gt;&lt;body&gt;"</span>);
+  <span style="color:#66d9ef">if</span>($_[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>) {
+      <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">"Your login was accepted&lt;br/&gt;"</span>);
+  } <span style="color:#66d9ef">else</span> {
+      <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">"Your login failed&lt;br/&gt;"</span>);
   }    
-  print("Would you like a cookie?<br/><br/></body></html>\n");
+  <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">"Would you like a cookie?&lt;br/&gt;&lt;br/&gt;&lt;/body&gt;&lt;/html&gt;\n"</span>);
 }
 
-htmlz(login(param("username"), param("password")));
-
-</code>
-</p>
+htmlz(login(param(<span style="color:#e6db74">"username"</span>), param(<span style="color:#e6db74">"password"</span>)));</code><span class="copy-to-clipboard" title="Copy to clipboard"></span></pre></div>
