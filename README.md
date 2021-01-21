@@ -34,8 +34,7 @@ Per fare questo livello, accedi come l'account level16 con la password level16. 
 <p> Il codice sorgente è visionabile <a href="https://github.com/izzoluca/Nebula16-Walkthrough_ITA/blob/main/script.perl"> qui </a>  </p>
 
 <h2> Guida Completa della sfida </h2>
-<p> La guida completa della Sfida (CTF) Nebula16 è visionabile <a href="https://github.com/izzoluca/Nebula16-Walkthrough_ITA/blob/main/Nebula16-WalkthroughITA.pptx"> qui </a> in versione PPTX (Powerpoint)  </p>
-<p> <a href="https://github.com/izzoluca/Nebula16-Walkthrough_ITA/blob/main/Nebula16-WalkthroughITA.pptx"> qui </a> in versione PDF.</p>
+<p> La guida completa della Sfida (CTF) Nebula16 è visionabile <br> <a href="https://github.com/izzoluca/Nebula16-Walkthrough_ITA/blob/main/Nebula16-WalkthroughITA.pptx"> qui </a> in versione PPTX (Powerpoint) <br> <a href="https://github.com/izzoluca/Nebula16-Walkthrough_ITA/blob/main/Nebula16-WalkthroughITA.pptx"> qui </a> in versione PDF.</p>
 
 
 <h1>📚📚 TEAM 📚📚</h1>
