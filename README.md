@@ -16,4 +16,16 @@ Nebula accompagna il partecipante attraverso una serie di punti deboli e vulnera
 
 
 <h2> Download Nebula </h2>
-<p> Il download è disponibile <a href="https://exploit.education/downloads/" </a> qui </p>
+<p> Il download è disponibile <a href="https://exploit.education/downloads/"> qui </a>  </p>
+
+<h2> Per iniziare </h2>
+<p> Accedi alla macchina virtuale come nome utente "levelXX" con una password di "levelXX" (senza virgolette), dove XX è il numero del livello. Alcuni livelli possono essere eseguiti in modo puramente remoto. </p>
+
+<h2> Ottenere i permessi di Root </h2>
+<p> Nel caso in cui sia necessario l'accesso root per modificare cose (come mappature dei tasti, ecc.), Puoi fare quanto segue: <br>
+Utente = "nebula" & Password = "nebula" seguita da "sudo -s" con la password "nebula". Avrai quindi i privilegi di root per cambiare ciò che deve essere cambiato. </p>
+
+
+<h1> LEVEL 16 </h1>
+<p> C'è uno script perl in esecuzione sulla porta 1616. <br>
+Per fare questo livello, accedi come l'account level16 con la password level16. I file per questo livello possono essere trovati in "/home/flag16". </p>
