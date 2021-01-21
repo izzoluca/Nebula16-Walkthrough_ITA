@@ -1,37 +1,45 @@
-## Welcome to GitHub Pages
+## Introduction
 
-You can use the [editor on GitHub](https://github.com/izzoluca/Nebula16-Walkthrough_ITA/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Nebula accompagna il partecipante attraverso una serie di punti deboli e vulnerabilità comuni (e meno comuni) in Linux. Diamo uno sguardo più nel dettaglio:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<ul>
+<li>File SUID</li>
+<li>Autorizzazioni</li>
+<li>Race conditions</li>
+<li>Meta-variabili della Shell</li>
+<li>Punti deboli del "$PATH"</li>
+<li>Debolezze del linguaggio di scripting</li>
+<li>Errori di compilazione binaria</li>
+</ul>
+Alla fine di Nebula, l'utente avrà una comprensione abbastanza approfondita degli attacchi locali contro i sistemi Linux e uno sguardo superficiale ad alcuni degli attacchi remoti possibili.
 
-### Markdown
+### Download Nebula
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<p> Il download è disponibile <a href="https://exploit.education/downloads/"> qui </a>  </p>
 
-```markdown
-Syntax highlighted code block
+### Per Iniziare
 
-# Header 1
-## Header 2
-### Header 3
+Accedi alla macchina virtuale come nome utente "levelXX" con una password di "levelXX" (senza virgolette), dove XX è il numero del livello. Alcuni livelli possono essere eseguiti in modo puramente remoto.
 
-- Bulleted
-- List
+### Ottenere i permessi di Root 
+Nel caso in cui sia necessario l'accesso root per modificare cose (come mappature dei tasti, ecc.), Puoi fare quanto segue: <br>
+Utente = "nebula" & Password = "nebula" seguita da "sudo -s" con la password "nebula". Avrai quindi i privilegi di root per cambiare ciò che deve essere cambiato.
 
-1. Numbered
-2. List
+## LEVEL 16 
+C'è uno script perl in esecuzione sulla porta 1616. <br>
+Per fare questo livello, accedi come l'account level16 con la password level16. I file per questo livello possono essere trovati in "/home/flag16".
 
-**Bold** and _Italic_ and `Code` text
+### Codice Sorgente 
+<p> Il codice sorgente è visionabile <a href="https://github.com/izzoluca/Nebula16-Walkthrough_ITA/blob/main/script.perl"> qui </a>  </p>
 
-[Link](url) and ![Image](src)
-```
+### Guida Completa della sfida
+<p> La guida completa della Sfida (CTF) Nebula16 è visionabile <br> <a href="https://github.com/izzoluca/Nebula16-Walkthrough_ITA/blob/main/Nebula16-WalkthroughITA.pptx"> qui </a> in versione PPTX (Powerpoint) <br> <a href="https://github.com/izzoluca/Nebula16-Walkthrough_ITA/blob/main/Nebula16-WalkthroughITA.pptx"> qui </a> in versione PDF.</p>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/izzoluca/Nebula16-Walkthrough_ITA/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<h1>📚📚 TEAM 📚📚</h1>
+<img src="https://github.com/izzoluca/Nebula16-Walkthrough_ITA/blob/main/img/TeamUnisa.png" alt="TeamUnisa" >
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Luca: https://github.com/izzoluca
+Luigi: https://github.com/luigicerreto
+Antonio: https://github.com/Martella 
